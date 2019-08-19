@@ -6,9 +6,14 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
+<<<<<<< HEAD
     customerList = ""
     katz_deli.each_with_index {|name,index| customerList +=" #{index+1}. #{name}"}
     puts "The line is currently:" + customerList
+=======
+    puts "The line is currently:" 
+              + katz_deli.each { " #{index+1}. #{katz_deli[index]}"}
+>>>>>>> c6afa0d629cb038602a10483db98e90dad16a5ae
   end
 end
 
